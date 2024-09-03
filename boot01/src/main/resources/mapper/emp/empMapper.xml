@@ -20,7 +20,26 @@
 	
 	<!-- 단건조회 -->
 	<select id="selectEmpInfo" resultType="EmpVO">
-	
+		SELECT   employee_id
+		        ,first_name
+		        ,last_name
+		        ,email
+		        ,phone_number
+		        ,hire_date
+		        ,job_id
+		        ,salary
+		        ,commission_pct
+		        ,manager_id
+		        ,department_id
+		FROM     employees
+		WHERE	 employee_id = #{employeeId}
+		<!-- 
+		#{} : 데이터 타입에 따른 추가작업
+		#{} : 데이터 타입과 무관, ''없이 진행
+		WHERE	job_id LIKE '%' || #{} || '%'
+		WHERE	job_id LIKE '%${}%'
+		WHERE	${} LIKE '%${}'		
+		 -->
 	</select>
 	
 	<!-- 등록 -->
