@@ -15,6 +15,14 @@
 		        ,manager_id
 		        ,department_id
 		FROM     employees
+		<where>
+			<if test="lastName != null and !lastName.equals('')">
+				last_name = #{lastName}
+			</if>
+			<if test="departmentId > 0">
+				and department_id = #{departmentId}
+			</if>
+		</where>
 		ORDER BY employee_id	
 	</select>
 	
@@ -44,16 +52,69 @@
 	
 	<!-- 등록 -->
 	<insert id="insertEmpInfo" parameterType="EmpVO">
-	
+
+		<selectKey 	keyProperty="employeeId"
+					resultType="Integer"
+					order="BEFORE">
+		SELECT	NVL(MAX(employee_id), 100) + 1
+		FROM	employees
+		</selectKey>	
+
+		INSERT INTO employees(
+			 employee_id
+			,last_name
+			,email
+			,hire_date
+			,job_id
+			<if test="salary > 0">
+			,salary
+			</if>
+		)
+		VALUES(
+			<!-- employees_seq.NEXTVAL -->
+			 #{employeeId}
+			,#{lastName}
+			,#{email}
+			<choose>
+				<when test="hireDate != null">
+			,#{hireDate}
+				</when>
+				<otherwise>
+			,SYSDATE
+				</otherwise>
+			</choose>			
+			,#{jobId}
+			<if test="salary > 0">
+			,#{salary}
+			</if>
+		)
+		
 	</insert>
 	
 	<!-- 수정 -->
 	<update id="updateEmpInfo">
-	
+		UPDATE	employees
+		SET		
+				 last_name = #{emp.lastName}
+				 <if test="emp.email != null and !emp.email.equals('')">
+				,email = #{emp.email}
+				 </if>
+				 <if test="emp.jobId != null and !emp.jobId.equals('')">
+				,job_id = #{emp.jobId}
+				 </if>
+				 <if test="emp.hireDate != null">
+				,hire_date = #{emp.hireDate}
+				 </if>
+		
+		WHERE	employee_id = #{eid}
 	</update>
 	
 	<!-- 삭제 -->
 	<delete id="deleteEmpInfo" parameterType="int">
+	
+		DELETE
+		FROM	employees
+		WHERE	employee_id = #{id}
 	
 	</delete>
 	
