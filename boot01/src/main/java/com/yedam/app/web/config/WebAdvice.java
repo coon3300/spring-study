@@ -1,5 +1,7 @@
 package com.yedam.app.web.config;
 
+import java.sql.SQLException;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
@@ -11,8 +13,9 @@ import jakarta.servlet.http.HttpServletRequest;
 @ControllerAdvice
 public class WebAdvice {
 	// 예외처리
-	@ExceptionHandler(IllegalAccessException.class)
-	public ResponseEntity<String> invokeError(){
+	//@ExceptionHandler(IllegalAccessException.class)
+	@ExceptionHandler(SQLException.class)
+	public ResponseEntity<String> invokeError(SQLException sqlException){
 		return new ResponseEntity<>("Error Message", HttpStatus.BAD_REQUEST);
 	}
 	

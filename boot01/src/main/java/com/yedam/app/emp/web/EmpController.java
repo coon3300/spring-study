@@ -68,18 +68,18 @@ public class EmpController {
 		String url = null;
 		if(eid > -1) {
 			// 정상적으로 등록된 경우
-			url = "redirect: empInfo?employeeId=" + eid;
+			url = "redirect:empInfo?employeeId=" + eid;
 			// redirect: 가능한 경우 => GetMapping
 		}else {
 			// 등록되지 않은 경우
-			url = "redirect: empList";
+			url = "redirect:empList";
 		}
 		
 		return url;
 	}
 	
 	// 수정 - 페이지 : Get, 조건이 필요 <=> 단건조회
-	@GetMapping("empUpdate")
+	@GetMapping("empUpdate") // empUpdate?employeeId=value
 	public String empUpdateForm(EmpVO empVO, Model model) {
 		EmpVO findVO = empService.empInfo(empVO);
 		model.addAttribute("emp",findVO);
@@ -87,14 +87,14 @@ public class EmpController {
 	}
 	
 	// 수정 - 처리 : Post, AJAX => QueryString
-	@PostMapping("empUpdate")
+	//@PostMapping("empUpdate")
 	@ResponseBody //AJAX // 응답, 리턴위에서 사용, 리턴에서 예외 발생(?)
 	public Map<String, Object> empUpdateAJAXQueryString(EmpVO empVO){
 		return empService.empUpdate(empVO);
 	}
 	
 	// 수정 - 처리 : AJAX => JSON(@RequestBody)
-	//@PostMapping("empUpdate")
+	@PostMapping("empUpdate")
 	@ResponseBody //AJAX
 	public Map<String, Object> empUpdateAJAXJSON(@RequestBody EmpVO empVO){
 		return empService.empUpdate(empVO);
@@ -104,7 +104,7 @@ public class EmpController {
 	@GetMapping("empDelete")
 	public String empDelete(Integer employeeId) {
 		empService.empDelete(employeeId);
-		return "redirct: empList";
+		return "redirect:empList";
 	}
 
 }
