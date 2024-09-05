@@ -38,15 +38,20 @@ public class EmpController {
 		// 2) 클라이언트에 전달할 데이터 담기
 		model.addAttribute("emps", list);
 		return "emp/list"; // 3) 데이터를 출력할 페이지 결정
+		// prefix + return + suffix => 실제 경로/ViewResolver
+        // classpath:/templates/emp/list.html		
 	}
+	
 	// 단건조회 : Get => QueryString(커맨드 객체 or @RequestParam), employeeId
-	@GetMapping("empInfo")
+	@GetMapping("empInfo") // empInfo?employeeId=value
 	public String empInfo(EmpVO empVO, Model model) {
 		EmpVO findVO = empService.empInfo(empVO);
 		model.addAttribute("emp",findVO);
 		// HttpServletRequest.setAttribute();
 	
 		return "emp/info";
+        // classpath:/templates/emp/info.html => 실제 경로		
+		
 	}
 	
 	// 등록 - 페이지
