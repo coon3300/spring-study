@@ -69,8 +69,7 @@
 			<if test="salary > 0">
 			,salary
 			</if>
-		)
-		VALUES(
+		)VALUES(
 			<!-- employees_seq.NEXTVAL -->
 			 #{employeeId}
 			,#{lastName}

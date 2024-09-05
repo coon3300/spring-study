@@ -2,7 +2,7 @@
 <html xmlns:th="https://www.thymeleaf.org/">
 <head>
 <meta charset="UTF-8">
-<meta name="ctxPath" th:value="${contextPath}"><!--/* content 대신 value 사용 null값 처리 문제(?) */-->
+<meta name="ctxPath" th:value="${contextPath}"><!--/* content 대신 value 사용 null 처리 문제(?) */-->
 <title>emlList</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
@@ -39,7 +39,7 @@
     
 <script>
 	const context = $('meta[name="ctxPath"]').attr('value'); // val();
-	$('tbody > tr').on('click', function(evnet){
+	$('tbody > tr').on('click', function(event){
 		let trTag = event.currentTarget;
 		let eid = $(trTag).children().eq(1).text();
 		let url = context + '/empInfo?employeeId=' + eid;
