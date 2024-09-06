@@ -26,7 +26,7 @@
 		<selectKey	keyProperty="departmentId"
 					resultType="Integer" 
 					order="BEFORE">
-			SELECT 	NVL(MAX(department_id), 100) + 1
+			SELECT 	NVL(MAX(department_id), 100) + 10
 			FROM 	departments
 		</selectKey>
 		
