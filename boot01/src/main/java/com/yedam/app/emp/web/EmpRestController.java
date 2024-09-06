@@ -34,7 +34,7 @@ public class EmpRestController {
 	public List<EmpVO> empList(){
 		return empService.empList();
 	}
-	//단건조회 : ? + URI(자원 => emps)
+	//단건조회 : GET + URI(자원 => emps)
 	@GetMapping("emps/{employeeId}") //PathVariable방식
 	public EmpVO empInfo(@PathVariable Integer employeeId) {
 		EmpVO empVO = new EmpVO();
@@ -49,8 +49,8 @@ public class EmpRestController {
 	}
 	//수정	: PUT + URI(자원 => emps)
 	@PutMapping("emps/{employeeId}")
-	public Map<String, Object> empUpdate(@PathVariable Integer employeeID, @RequestBody EmpVO empVO) {
-		empVO.setEmployeeId(employeeID);
+	public Map<String, Object> empUpdate(@PathVariable Integer employeeId, @RequestBody EmpVO empVO) {
+		empVO.setEmployeeId(employeeId);
 		return empService.empUpdate(empVO);
 	}
 	//삭제	: DELETE + URI(자원 => emps)
