@@ -1,4 +1,4 @@
-package com.yedam.app.emp.serviece;
+package com.yedam.app.emp.service;
 
 import java.util.List;
 import java.util.Map;

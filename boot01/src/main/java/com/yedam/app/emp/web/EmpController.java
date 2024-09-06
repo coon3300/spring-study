@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.yedam.app.emp.serviece.EmpService;
-import com.yedam.app.emp.serviece.EmpVO;
+import com.yedam.app.emp.service.EmpService;
+import com.yedam.app.emp.service.EmpVO;
 
 @Controller // Route : 사용자의 요청(endpoint)와 그에 대한 처리
 // URI + METHOD => Service => View

@@ -4,7 +4,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
-import com.yedam.app.emp.serviece.EmpVO;
+import com.yedam.app.emp.service.EmpVO;
 
 @Controller
 public class ThymeleafController {

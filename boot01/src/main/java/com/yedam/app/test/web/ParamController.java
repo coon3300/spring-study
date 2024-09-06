@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.yedam.app.emp.serviece.EmpVO;
+import com.yedam.app.emp.service.EmpVO;
 
 @Controller
 public class ParamController {

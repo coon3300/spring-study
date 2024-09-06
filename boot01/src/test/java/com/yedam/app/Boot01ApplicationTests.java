@@ -13,7 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import com.yedam.app.emp.mapper.EmpMapper;
-import com.yedam.app.emp.serviece.EmpVO;
+import com.yedam.app.emp.service.EmpVO;
 
 @SpringBootTest
 class Boot01ApplicationTests {

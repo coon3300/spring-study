@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.yedam.app.emp.serviece.EmpService;
-import com.yedam.app.emp.serviece.EmpVO;
+import com.yedam.app.emp.service.EmpService;
+import com.yedam.app.emp.service.EmpVO;
 
 import lombok.RequiredArgsConstructor;
 
