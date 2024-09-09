@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
+<th:block th:replace="~{common/configs/default_config ::  defaultConfig}"></th:block>
+
 <head>
 <meta charset="UTF-8">
 <title>Form 방식</title>
 </head>
 <body>
 <!-- formUpload.html -->
+<div class="container">
 	<form th:action="@{uploadForm}" method="post" enctype="multipart/form-data">
-		<input type="file" name="file"><!-- UploadController 매개변수명과 일치 -->
-		<button type="submit">저장</button>
+		<div class="mb-3">
+			<input type="file" name="files" multiple class="form-control"><!-- UploadController 매개변수명과 file/files 일치 -->
+			<button type="submit" class="btn btn-primary">저장</button>
+		</div>
 	</form>
+</div>
 </body>
-</html>
+</html>	
