@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net/thymeleaf/layout"
+	  layout:decorate="~{common/layouts/default_layout}"
+	  layout:fragment="Content">
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
@@ -7,7 +10,7 @@
 </head>
 <body>
 	<form name="updateForm" th:object="${dept}">
-		<h3>사원 정보 수정</h3>
+		<h3>부서 정보 수정</h3>
 		<div>
 			<label for="did">부서 번호</label>
 			<input type="number" th:field="*{departmentId}" readonly>

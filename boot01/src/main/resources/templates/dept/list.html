@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net/thymeleaf/layout"
+	  layout:decorate="~{common/layouts/default_layout}"
+	  layout:fragment="Content">
 <head>
 <meta charset="UTF-8">
-<meta name="ctxPath" th:value="${contextPath}"><!--/* content 대신 value 사용 null 처리 문제(?) */-->
+<!-- <meta name="ctxPath" th:value="${contextPath}"> -->
 <title>Insert title here</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
-	<div>
+    <div class="container">
 		<h3>전체 부서 조회</h3>
-		<table>
+        <table class="table table-striped">
 			<thead>
 				<tr>
 					<th>부서번호</th>
