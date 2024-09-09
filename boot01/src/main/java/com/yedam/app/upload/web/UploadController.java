@@ -11,6 +11,7 @@ public class UploadController {
 	@GetMapping("formUpload")
 	public void formUploadPage() {}
 	
+	// classpath:/templates/formUpload.html
 	@PostMapping("uploadForm")
 	public String formUploadFile(@RequestPart MultipartFile file) {
 		System.out.println(file.getOriginalFilename());
