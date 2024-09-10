@@ -18,7 +18,8 @@ public class SpringSecurityConfig {
 	PasswordEncoder passwordEncoder() {
 		return new BCryptPasswordEncoder(); //BCrypt 단방향 해시 알고리즘
 	}
-	
+/*
+ * 	
 	@Bean // 메모리상 인증정보 등록 => 테스트 전용
 	InMemoryUserDetailsManager inMemoryUserDetailsService() {
 		UserDetails user = 	User.builder()
@@ -32,11 +33,12 @@ public class SpringSecurityConfig {
 									.username("admin1")
 									.password(passwordEncoder().encode("1234"))
 //									.roles("ADMIN") // ROLE_USER : ROLE_ 자동 추가
-									.authorities("ROLE_ADMIN")
+									.authorities("ROLE_ADMIN", "ROLE_USER")
 									.build();
 		
 		return new InMemoryUserDetailsManager(user, admin);
 	}
+ */
 	
 	// 인증 및 인가
 	@Bean
@@ -48,12 +50,16 @@ public class SpringSecurityConfig {
 //				.requestMatchers("/user/**").hasRole("USER")
 				.requestMatchers("/user/**").hasAnyRole("USER", "ADMIN")
 				.requestMatchers("/admin/**").hasAuthority("ROLE_ADMIN")
-				.anyRequest().authenticated() // 위 경로 제외 일괄 인증처리
+				.anyRequest().authenticated() // 위 경로 제외 인증되면 접속 허가. 권한 필요 없음.
 		)
-		.formLogin(formlogin -> formlogin.defaultSuccessUrl("/all"))
-		.logout(logout -> logout.logoutSuccessUrl("/all"));
+		.formLogin(formlogin -> formlogin
+				.defaultSuccessUrl("/all"))
+		.logout(logout -> logout
+				.logoutSuccessUrl("/all")
+				.invalidateHttpSession(true)); // 로그아웃 시 세션 삭제
 		
-		
+		http.csrf(csrf -> csrf.disable()); // 개발용.th에서도 삭제
+				
 		return http.build();
 	}
 }

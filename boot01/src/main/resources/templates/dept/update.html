@@ -9,28 +9,32 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
-	<form name="updateForm" th:object="${dept}">
-		<h3>부서 정보 수정</h3>
-		<div>
-			<label for="did">부서 번호</label>
-			<input type="number" th:field="*{departmentId}" readonly>
-		</div>		
-		<div>
-			<label for="dname">부서명</label>
-			<input type="text" th:field="*{departmentName}">
-		</div>
-		<div>
-			<label for="mid">매니저 번호</label>
-			<input type="text" th:field="*{managerId}">
-		</div>
-		<div>
-			<label for="lid">지역번호</label>
-			<input type="text" th:field="*{locationId}">
-		</div>
-		<div>
-			<button type="button" id="updateBtn">저장</button>
-		</div>
-	</form>
+	<div class="container">
+
+		<form name="updateForm" th:object="${dept}" class="card p-2">
+			<h3>부서 정보 수정</h3>
+			<div>
+				<label for="did">부서 번호</label>
+				<input type="number" th:field="*{departmentId}" readonly>
+			</div>		
+			<div>
+				<label for="dname">부서명</label>
+				<input type="text" th:field="*{departmentName}">
+			</div>
+			<div>
+				<label for="mid">매니저 번호</label>
+				<input type="text" th:field="*{managerId}">
+			</div>
+			<div>
+				<label for="lid">지역번호</label>
+				<input type="text" th:field="*{locationId}">
+			</div>
+			<div>
+				<button type="button" id="updateBtn">저장</button>
+			</div>
+		</form>
+		
+	</div>
 	
 	<script>
 		$('#updateBtn').on('click', updateAjax);
