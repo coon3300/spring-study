@@ -67,7 +67,7 @@ class Boot01ApplicationTests {
 		EmpVO empVO = new EmpVO();
 		empVO.setLastName("Han");
 		empVO.setEmail("jhHan123@gamil.com");
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-mm-dd");
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 		Date today = sdf.parse("2024-08-15");
 		empVO.setHireDate(new Date());
 		empVO.setJobId("SA_REP");
