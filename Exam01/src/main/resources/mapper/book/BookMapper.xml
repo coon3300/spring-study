@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yedam.app.book.mapper.BookMapper">
+
+	<select id="selectBookAll" resultType="BookVO">
+		SELECT	book_no
+		     book_no
+		    ,book_name
+		    ,book_coverimg
+		    ,book_date
+		    ,book_price
+		    ,book_publisher
+		    ,book_info	
+		FROM	book_tbl_06
+		ORDER BY book_no
+	</select>
+	
+	<select id="selectBookInfoNo" resultType="int">
+		SELECT	MAX(book_no) + 1				
+		FROM	book_tbl_06
+	</select>
+	
+	<select id="selectRent">
+		select  b.book_no as book_no
+		        ,b.book_name as book_name
+		        ,sum(r.rent_price) as rent_sum
+		        ,count(r.rent_status) as rent_count
+		from    book_tbl_06 b
+		join    rent_tbl_06 r
+		on      b.book_no = r.book_no
+		group by b.book_no, b.book_name
+		order by b.book_no
+	</select>
+	
+	<insert id="insertBookInfo" parameterType="BookVO">
+		INSERT INTO book_tbl_06(
+		     book_no
+		    ,book_name
+		    ,book_coverimg
+		    ,book_date
+		    ,book_price
+		    ,book_publisher
+		    ,book_info
+		)VALUES(
+			#{bookNo}
+			,#{bookName}
+			,#{bookCoverimg}
+			,#{bookDate}
+			,#{bookPrice}
+			,#{bookPublisher}
+			,#{bookInfo}
+		)	
+	</insert>
+
+
+</mapper>

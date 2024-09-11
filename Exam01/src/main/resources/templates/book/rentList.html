@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net/thymeleaf/layout"
+	  layout:decorate="~{common/layouts/default_layout}"
+	  layout:fragment="Content"><head>
+<meta charset="UTF-8">
+<title>rentList</title>
+</head>
+<body>
+	<div class="text-center ">
+		<h3>도서 목록</h3>
+		<table class="table table-striped" >
+			<thead>
+				<tr>
+					<th>도서번호</th>
+					<th>도서명</th>
+					<th>대여총계</th>
+					<th>대여횟수</th>
+				</tr>
+			</thead>
+			<tbody>
+				<th:block th:each="info : ${rents}">
+					<tr>
+						<td>[[${info.bookNo}]]</td>
+						<td>[[${info.bookName}]]</td>
+						<td>[[${info.rentSum}]]</td>
+						<td>[[${info.rentCount}]]</td>
+					</tr>
+				</th:block>				
+			</tbody>
+		</table>
+	</div>
+</body>
+
+<script>
+
+</script>
+
+</html>
