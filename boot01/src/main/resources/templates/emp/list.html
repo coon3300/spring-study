@@ -41,11 +41,12 @@
     </div>
     
 <script>
-	const context = $('meta[name="ctxPath"]').attr('value'); // val();
+	//const context = $('meta[name="ctxPath"]').attr('value'); // val();
 	$('tbody > tr').on('click', function(event){
 		let trTag = event.currentTarget;
 		let eid = $(trTag).children().eq(1).text();
-		let url = context + '/empInfo?employeeId=' + eid;
+		//let url = context + '/empInfo?employeeId=' + eid;
+		let url = '/empInfo?employeeId=' + eid;
 		location.href=url;
 	});
 </script>

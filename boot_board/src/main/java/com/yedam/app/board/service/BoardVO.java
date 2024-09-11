@@ -2,6 +2,8 @@ package com.yedam.app.board.service;
 
 import java.util.Date;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -16,6 +18,7 @@ public class BoardVO {
 	private String title;	//게시글 제목
 	private String contents;//게시글 내용
 	private String writer;	//게시글 작성자
+//	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	private Date regdate;	//게시글 작성일
 	private Date updatedate;//게시글 수정일
 	private String image;	//게시글 이미지
