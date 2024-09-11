@@ -1,5 +1,8 @@
 package com.yedam.app.board.service.impl;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -10,11 +13,11 @@ import com.yedam.app.board.mapper.BoardMapper;
 import com.yedam.app.board.service.BoardService;
 import com.yedam.app.board.service.BoardVO;
 
-@Service // AOP => Transactional
+@Service // AOP => @Transactional
 public class BoardServiceImpl implements BoardService {
 	private BoardMapper boardMapper;
 	
-	@Autowired
+	@Autowired // 생성자 주입
 	public BoardServiceImpl(BoardMapper boardMapper) {
 		this.boardMapper = boardMapper;
 	}
@@ -37,12 +40,38 @@ public class BoardServiceImpl implements BoardService {
 
 	@Override
 	public Map<String, Object> updateBoard(BoardVO boardVO) {
-		return null;
+		Map<String, Object>	map = new HashMap<>();
+		
+		boolean isSuccessed = false;
+		
+		int result = boardMapper.updateBoardInfo(boardVO);
+		
+		if(result == 1) {
+			isSuccessed = true;
+		}
+		
+		
+		String updateDate = getUpdateDate();
+		
+		map.put("date", updateDate);
+		map.put("result", isSuccessed);
+		map.put("target", boardVO);
+		
+		
+		return map;
+	}
+//	public String getUpdateDate() {
+	private String getUpdateDate() {
+		LocalDate today = LocalDate.now();
+		DateTimeFormatter dtFormat = DateTimeFormatter.ofPattern("yyyy/MM/dd");
+		String updateDt = today.format(dtFormat);
+		 
+		return updateDt;
 	}
 
 	@Override
 	public int deleteBoard(int bno) {
-		return 0;
+		return boardMapper.deleteBoardInfo(bno);
 	}
 
 }
