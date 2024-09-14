@@ -1,16 +1,20 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+	xmlns:layout="http://www.ultraq.net/thymeleaf/layout"
+	layout:decorate="~{common/layouts/default_layout}"
+	layout:fragment="Content">
 <head>
 <meta charset="UTF-8">
 <title>admin</title>
 </head>
 <body>
-	<h1>관리자 전용 페이지</h1>
-	관리자용 페이지 입니다.
-	<ul>
-		<li>
-			<a th:href="@{/all}">메인 페이지로</a>
-		</li>
-	</ul>
+	<div class="container card">
+		<h1>관리자 전용 페이지</h1>
+		관리자용 페이지 입니다.
+		<ul>
+			<li><a th:href="@{/all}">메인 페이지로</a></li>
+		</ul>
+	</div>
 </body>
 </html>

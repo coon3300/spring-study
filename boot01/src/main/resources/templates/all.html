@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org"
-	  xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+	xmlns:layout="http://www.ultraq.net/thymeleaf/layout"
+	layout:decorate="~{common/layouts/default_layout}"
+	layout:fragment="Content">
 <head>
 <meta charset="UTF-8">
 <!-- http.csrf(csrf -> csrf.disable());
@@ -10,23 +13,22 @@
 <title></title>
 </head>
 <body>
-	<h1>메인 페이지입니다.</h1>
-	<ul>
-		<li>
-			<a th:href="@{/user}">일반 사용자용 페이지로</a>
-		</li>
-		<li sec:authorize="hasRole('ADMIN')">
-			<a th:href="@{/admin}">관리자 전용 페이지로</a>
-		</li>
-	</ul>
-	<th:block sec:authorize="isAuthenticated()">
-		<p sec:authentication="name"/>
-		<p sec:authentication="principal.username"/>
-		<p sec:authentication="principal.authorities"/>
-	</th:block>
-	
-	<form th:action="@{/logout}" method="post">
-		<button type="submit">로그아웃</button>
-	</form>
+	<div class="container card">
+		<h1>메인 페이지입니다.</h1>
+		<ul>
+			<li><a th:href="@{/user}">일반 사용자용 페이지로</a></li>
+			<li sec:authorize="hasRole('ADMIN')"><a th:href="@{/admin}">관리자
+					전용 페이지로</a></li>
+		</ul>
+		<th:block sec:authorize="isAuthenticated()">
+			<p sec:authentication="name" />
+			<p sec:authentication="principal.username" />
+			<p sec:authentication="principal.authorities" />
+		</th:block>
+
+		<form th:action="@{/logout}" method="post">
+			<button type="submit">로그아웃</button>
+		</form>
+	</div>
 </body>
 </html>

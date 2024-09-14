@@ -35,7 +35,11 @@
 
       <ul class="nav nav-pills">
         <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-        <li sec:authorize="hasRole('ADMIN')" class="nav-item"><a th:href="@{/log}" class="nav-link">log</a></li>
+        <li sec:authorize="hasRole('ADMIN')" class="nav-item"><a th:href="@{wallboard}" class="nav-link">wallboard</a></li>
+        <li sec:authorize="hasRole('ADMIN')" class="nav-item"><a th:href="@{log}" class="nav-link">log</a></li>
+        <li sec:authorize="hasRole('ADMIN')" class="nav-item"><a th:href="@{admin}" class="nav-link">admin</a></li>
+        <li class="nav-item"><a th:href="@{all}" class="nav-link">all</a></li>
+        <li class="nav-item"><a th:href="@{user}" class="nav-link">user</a></li>
         <li class="nav-item"><a th:href="@{empList}" class="nav-link">전체사원조회</a></li>
         <li class="nav-item"><a th:href="@{empInsert}" class="nav-link">사원등록</a></li>
         <li class="nav-item"><a th:href="@{deptList}" class="nav-link">전체부서조회</a></li>

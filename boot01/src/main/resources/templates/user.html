@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+	xmlns:layout="http://www.ultraq.net/thymeleaf/layout"
+	layout:decorate="~{common/layouts/default_layout}"
+	layout:fragment="Content">
 <head>
 <meta charset="UTF-8">
 <title>user</title>
 </head>
 <body>
+<div class="container card">
 	<h1>일반 사용자용 페이지</h1>
 	일반 사용자용 페이지 입니다.
 	<ul>
@@ -12,5 +17,6 @@
 			<a th:href="@{/all}">메인 페이지로</a>
 		</li>
 	</ul>
+</div>
 </body>
 </html>

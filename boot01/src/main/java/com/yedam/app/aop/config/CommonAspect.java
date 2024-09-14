@@ -20,9 +20,10 @@ public class CommonAspect {
 	
 	// 포인트컷 : 조인포인트(@Service의 메소드들)중에서
 	//			Advice(횡단관심, 부가기능)이 적용될 메소드 조건
-    //@Pointcut("within(com.yedam.app.emp.service.impl.*)") // 검색 조건
+//    @Pointcut("within(com.yedam.app.emp.service.impl.*)") // 검색 조건
+//	public void empPointCut() {}
     @Pointcut("within(com.yedam.app.**.service.impl.*)") // 검색 조건
-    public void empPointCut() {}
+    public void servicePointCut() {}
       
     // Weaving : 포인트컷 + 동작시점 + Advice
     //@Before("empPointCut()")    
@@ -46,7 +47,7 @@ public class CommonAspect {
         }
     }
     
-    @Around("empPointCut()")
+    @Around("servicePointCut()")
     public Object executeTime(ProceedingJoinPoint joinPoint) throws Throwable {
     	/*
     	 * 

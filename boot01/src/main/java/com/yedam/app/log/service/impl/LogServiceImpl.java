@@ -18,7 +18,8 @@ import com.yedam.app.log.service.LogService;
 public class LogServiceImpl implements LogService{
     private static final String LOG_FILE_PATH = "./logs/boot01_application.log";
     private static final Pattern LOG_PATTERN = Pattern.compile("Finished (\\w+) in (\\w+) \\((\\d+)ms\\)");
-    private static final List<String> EXCLUDED_METHODS = Arrays.asList("getLog", "aaa");
+    private static final List<String> EXCLUDED_METHODS = Arrays.asList("getLog", "SomeOtherMethod");
+    private static final List<String> EXCLUDED_SERVICES = Arrays.asList("LogServiceImpl", "SomeOtherService");
 
     @Override
     public Map<String, Map<String, Integer>> getLog() {
@@ -33,7 +34,8 @@ public class LogServiceImpl implements LogService{
                 if (matcher.find()) {
                     String method = matcher.group(1);
                     String service = matcher.group(2);
-                    if (!EXCLUDED_METHODS.contains(method)) {
+//                    if (!EXCLUDED_METHODS.contains(method)) {
+                    if (!EXCLUDED_METHODS.contains(method) && !EXCLUDED_SERVICES.contains(service)) {
                         methodCounts.merge(method, 1, Integer::sum);
                         serviceCounts.merge(service, 1, Integer::sum);
                     }
