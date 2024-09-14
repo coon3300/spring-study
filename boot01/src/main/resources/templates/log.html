@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net/thymeleaf/layout"
+	  layout:decorate="~{common/layouts/default_layout}"
+	  layout:fragment="Content">
+<head>
+<meta charset="UTF-8">
+<!-- <meta name="ctxPath" th:value="${contextPath}"> -->
+<th:block th:replace="~{common/configs/default_config :: jQueryConfig}"></th:block>
+    <title>Log Statistics</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Spring Boot Log</h1>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="chart-container">
+                    <canvas id="methodChart"></canvas>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="chart-container">
+                    <canvas id="serviceChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script th:inline="javascript">
+        function createChart(elementId, data, title) {
+            var ctx = document.getElementById(elementId).getContext('2d');
+            var sortedData = Object.entries(data).sort((a, b) => b[1] - a[1]);
+            var labels = sortedData.map(item => item[0]);
+            var values = sortedData.map(item => item[1]);
+            
+            new Chart(ctx, {
+                type: 'pie',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        data: values,
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.8)',
+                            'rgba(54, 162, 235, 0.8)',
+                            'rgba(255, 206, 86, 0.8)',
+                            'rgba(75, 192, 192, 0.8)',
+                            'rgba(153, 102, 255, 0.8)',
+                            'rgba(255, 159, 64, 0.8)',
+                            'rgba(153, 102, 255, 0.8)',
+                            'rgba(255, 99, 132, 0.8)'
+                        ]
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: title,
+                            font: {
+                                size: 18
+                            }
+                        },
+                        legend: {
+                            position: 'bottom',
+                            labels: {
+                                boxWidth: 12
+                            }
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    var label = context.label || '';
+                                    var value = context.raw;
+                                    var total = context.dataset.data.reduce((a, b) => a + b, 0);
+                                    var percentage = Math.floor(((value/total) * 100)+0.5);
+                                    return label + ': ' + value + ' times (' + percentage + '%)';
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        var methodStats = /*[[${methodStats}]]*/ {};
+        var serviceStats = /*[[${serviceStats}]]*/ {};
+
+        if (Object.keys(methodStats).length > 0) {
+            createChart('methodChart', methodStats, 'Method 실행 횟수');
+        }
+        if (Object.keys(serviceStats).length > 0) {
+            createChart('serviceChart', serviceStats, 'Service 실행 횟수');
+        }
+        if (Object.keys(methodStats).length === 0 && Object.keys(serviceStats).length === 0) {
+            document.querySelector('.row').innerHTML = '<p class="text-center text-muted">No log data available.</p>';
+        }
+    </script>
+</div>
+</body>
+</html>
