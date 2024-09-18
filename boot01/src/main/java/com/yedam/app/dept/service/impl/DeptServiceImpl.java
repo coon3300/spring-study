@@ -11,15 +11,22 @@ import com.yedam.app.dept.mapper.DeptMapper;
 import com.yedam.app.dept.service.DeptService;
 import com.yedam.app.dept.service.DeptVO;
 
+import io.micrometer.core.annotation.Counted;
+import io.micrometer.core.instrument.Counter;
+import io.micrometer.core.instrument.MeterRegistry;
+
 @Service
 public class DeptServiceImpl implements DeptService{
+	private final MeterRegistry registry;
 	private DeptMapper deptMapper;
 	
 	@Autowired
-	public DeptServiceImpl(DeptMapper deptMapper) {
+	public DeptServiceImpl(DeptMapper deptMapper, MeterRegistry registry) {
 		this.deptMapper = deptMapper;
+		this.registry = registry;
 	}
 	
+	@Counted("my.list")
 	@Override
 	public List<DeptVO> deptList() {
 		return deptMapper.selectDeptAll();
@@ -33,6 +40,15 @@ public class DeptServiceImpl implements DeptService{
 	@Override
 	public int deptInsert(DeptVO deptVO) {
 		int result = deptMapper.insertDeptInfo(deptVO);
+		
+		
+		Counter.builder("my.dept")
+			.tag("class", this.getClass().getName())
+			.tag("method", "deptInsert")
+			.description("dept")
+			.register(registry).increment();
+		
+		
 		return result == 1 ? deptVO.getDepartmentId() : -1;
 	}
 
@@ -59,9 +75,16 @@ public class DeptServiceImpl implements DeptService{
 		
 		int result = deptMapper.deleteDeptInfo(deptId);
 		
+		Counter.builder("my.dept")
+		.tag("class", this.getClass().getName())
+		.tag("method", "deptDelete")
+		.description("dept")
+		.register(registry).increment();		
+		
 		if(result == 1) {
 			map.put("deparmentId", deptId);
 		}
+		
 		
 		return map;
 	}
