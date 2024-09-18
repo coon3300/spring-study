@@ -3322,3 +3322,427 @@ Caused by: reactor.netty.http.client.PrematureCloseException: Connection prematu
 
 2024-09-18T15:03:31.836+09:00  INFO 4672 --- [YedamApplication] [Thread-101] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
 2024-09-18T15:03:31.842+09:00  INFO 4672 --- [YedamApplication] [Thread-101] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2024-09-18T15:03:32.031+09:00  INFO 4672 --- [YedamApplication] [restartedMain] com.yedam.app.Boot01Application          : Starting Boot01Application using Java 17.0.9 with PID 4672 (C:\Users\Administrator\git\spring-study\boot01\target\classes started by Administrator in C:\Users\Administrator\git\spring-study\boot01)
+2024-09-18T15:03:32.031+09:00  INFO 4672 --- [YedamApplication] [restartedMain] com.yedam.app.Boot01Application          : No active profile set, falling back to 1 default profile: "default"
+2024-09-18T15:03:32.409+09:00  INFO 4672 --- [YedamApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-09-18T15:03:32.414+09:00  INFO 4672 --- [YedamApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JDBC repository interfaces.
+2024-09-18T15:03:32.558+09:00  WARN 4672 --- [YedamApplication] [restartedMain] o.apache.tomcat.util.modeler.Registry    : The MBean registry cannot be disabled because it has already been initialised
+2024-09-18T15:03:32.567+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 80 (http)
+2024-09-18T15:03:32.568+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-18T15:03:32.568+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-18T15:03:32.587+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-09-18T15:03:32.588+09:00  INFO 4672 --- [YedamApplication] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 554 ms
+2024-09-18T15:03:32.847+09:00  INFO 4672 --- [YedamApplication] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customerUserDetailsService
+2024-09-18T15:03:33.096+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 16 endpoints beneath base path '/actuator'
+2024-09-18T15:03:33.456+09:00  INFO 4672 --- [YedamApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2024-09-18T15:03:33.475+09:00  INFO 4672 --- [YedamApplication] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection oracle.jdbc.driver.T4CConnection@23e60e6a
+2024-09-18T15:03:33.475+09:00  INFO 4672 --- [YedamApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2024-09-18T15:03:33.532+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-18T15:03:33.569+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 80 (http) with context path '/'
+2024-09-18T15:03:33.585+09:00  INFO 4672 --- [YedamApplication] [restartedMain] com.yedam.app.Boot01Application          : Started Boot01Application in 1.588 seconds (process running for 185.309)
+2024-09-18T15:03:33.589+09:00  INFO 4672 --- [YedamApplication] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-09-18T15:03:33.593+09:00  INFO 4672 --- [YedamApplication] [http-nio-80-exec-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-18T15:03:33.593+09:00  INFO 4672 --- [YedamApplication] [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-18T15:03:33.595+09:00  INFO 4672 --- [YedamApplication] [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-09-18T15:03:33.607+09:00  INFO 4672 --- [YedamApplication] [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 2dcc9ea3d8f0
+2024-09-18T15:12:23.234+09:00  INFO 4672 --- [YedamApplication] [http-nio-80-exec-4] com.yedam.app.aop.config.CommonAspect    : Starting loadUserByUsername in CustomerUserDetailsService
+2024-09-18T15:12:23.515+09:00  INFO 4672 --- [YedamApplication] [http-nio-80-exec-4] com.yedam.app.aop.config.CommonAspect    : Finished loadUserByUsername in CustomerUserDetailsService (280ms)
+2024-09-18T15:12:32.736+09:00  INFO 4672 --- [YedamApplication] [http-nio-80-exec-4] com.yedam.app.aop.config.CommonAspect    : Starting getLog in LogServiceImpl
+2024-09-18T15:12:32.747+09:00  INFO 4672 --- [YedamApplication] [http-nio-80-exec-4] com.yedam.app.aop.config.CommonAspect    : Finished getLog in LogServiceImpl (11ms)
+2024-09-18T15:12:46.980+09:00  WARN 4672 --- [YedamApplication] [http-nio-80-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.context.request.async.AsyncRequestNotUsableException: ServletOutputStream failed to flush: java.io.IOException: 현재 연결은 사용자의 호스트 시스템의 소프트웨어의 의해 중단되었습니다]
+2024-09-18T15:22:07.732+09:00  INFO 4672 --- [YedamApplication] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2024-09-18T15:22:08.157+09:00  INFO 4672 --- [YedamApplication] [Thread-125] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2024-09-18T15:22:08.172+09:00  INFO 4672 --- [YedamApplication] [Thread-125] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2024-09-18T15:22:08.623+09:00  INFO 4672 --- [YedamApplication] [restartedMain] com.yedam.app.Boot01Application          : Starting Boot01Application using Java 17.0.9 with PID 4672 (C:\Users\Administrator\git\spring-study\boot01\target\classes started by Administrator in C:\Users\Administrator\git\spring-study\boot01)
+2024-09-18T15:22:08.624+09:00  INFO 4672 --- [YedamApplication] [restartedMain] com.yedam.app.Boot01Application          : No active profile set, falling back to 1 default profile: "default"
+2024-09-18T15:22:09.786+09:00  INFO 4672 --- [YedamApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-09-18T15:22:09.797+09:00  INFO 4672 --- [YedamApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 JDBC repository interfaces.
+2024-09-18T15:22:10.084+09:00  WARN 4672 --- [YedamApplication] [restartedMain] o.apache.tomcat.util.modeler.Registry    : The MBean registry cannot be disabled because it has already been initialised
+2024-09-18T15:22:10.096+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 80 (http)
+2024-09-18T15:22:10.098+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-18T15:22:10.099+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-18T15:22:10.131+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-09-18T15:22:10.131+09:00  INFO 4672 --- [YedamApplication] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1496 ms
+2024-09-18T15:22:10.306+09:00  WARN 4672 --- [YedamApplication] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Cannot deserialize session attribute [SPRING_SECURITY_CONTEXT] for session [E6C11C5D9B170F17FE12DC1FAD503434]
+2024-09-18T15:22:10.572+09:00  INFO 4672 --- [YedamApplication] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customerUserDetailsService
+2024-09-18T15:22:10.991+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 16 endpoints beneath base path '/actuator'
+2024-09-18T15:22:11.161+09:00  WARN 4672 --- [YedamApplication] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-09-18T15:22:11.468+09:00  INFO 4672 --- [YedamApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2024-09-18T15:22:11.494+09:00  INFO 4672 --- [YedamApplication] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection oracle.jdbc.driver.T4CConnection@7f71cb30
+2024-09-18T15:22:11.494+09:00  INFO 4672 --- [YedamApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2024-09-18T15:22:11.583+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-18T15:22:11.641+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 80 (http) with context path '/'
+2024-09-18T15:22:11.661+09:00  INFO 4672 --- [YedamApplication] [restartedMain] com.yedam.app.Boot01Application          : Started Boot01Application in 3.095 seconds (process running for 1303.384)
+2024-09-18T15:22:11.666+09:00  INFO 4672 --- [YedamApplication] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-09-18T15:22:11.672+09:00  INFO 4672 --- [YedamApplication] [http-nio-80-exec-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-18T15:22:11.672+09:00  INFO 4672 --- [YedamApplication] [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-18T15:22:11.675+09:00  INFO 4672 --- [YedamApplication] [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-09-18T15:22:11.691+09:00  INFO 4672 --- [YedamApplication] [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 2dcc9ea3d8f0
+2024-09-18T15:22:28.260+09:00  INFO 4672 --- [YedamApplication] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-09-18T15:22:28.537+09:00  INFO 4672 --- [YedamApplication] [Thread-208] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2024-09-18T15:22:28.545+09:00  INFO 4672 --- [YedamApplication] [Thread-208] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2024-09-18T15:22:28.867+09:00  INFO 4672 --- [YedamApplication] [restartedMain] com.yedam.app.Boot01Application          : Starting Boot01Application using Java 17.0.9 with PID 4672 (C:\Users\Administrator\git\spring-study\boot01\target\classes started by Administrator in C:\Users\Administrator\git\spring-study\boot01)
+2024-09-18T15:22:28.868+09:00  INFO 4672 --- [YedamApplication] [restartedMain] com.yedam.app.Boot01Application          : No active profile set, falling back to 1 default profile: "default"
+2024-09-18T15:22:29.682+09:00  INFO 4672 --- [YedamApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-09-18T15:22:29.690+09:00  INFO 4672 --- [YedamApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 JDBC repository interfaces.
+2024-09-18T15:22:30.067+09:00  WARN 4672 --- [YedamApplication] [restartedMain] o.apache.tomcat.util.modeler.Registry    : The MBean registry cannot be disabled because it has already been initialised
+2024-09-18T15:22:30.096+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 80 (http)
+2024-09-18T15:22:30.097+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-18T15:22:30.098+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-18T15:22:30.152+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-09-18T15:22:30.152+09:00  INFO 4672 --- [YedamApplication] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1279 ms
+2024-09-18T15:22:30.941+09:00  INFO 4672 --- [YedamApplication] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customerUserDetailsService
+2024-09-18T15:22:31.611+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 16 endpoints beneath base path '/actuator'
+2024-09-18T15:22:31.978+09:00  WARN 4672 --- [YedamApplication] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-09-18T15:22:32.371+09:00  INFO 4672 --- [YedamApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2024-09-18T15:22:32.397+09:00  INFO 4672 --- [YedamApplication] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-8 - Added connection oracle.jdbc.driver.T4CConnection@9e60e08
+2024-09-18T15:22:32.397+09:00  INFO 4672 --- [YedamApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2024-09-18T15:22:32.532+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-18T15:22:32.609+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 80 (http) with context path '/'
+2024-09-18T15:22:32.628+09:00  INFO 4672 --- [YedamApplication] [restartedMain] com.yedam.app.Boot01Application          : Started Boot01Application in 3.828 seconds (process running for 1324.351)
+2024-09-18T15:22:32.631+09:00  INFO 4672 --- [YedamApplication] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-09-18T15:22:32.636+09:00  INFO 4672 --- [YedamApplication] [http-nio-80-exec-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-18T15:22:32.636+09:00  INFO 4672 --- [YedamApplication] [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-18T15:22:32.639+09:00  INFO 4672 --- [YedamApplication] [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-09-18T15:22:32.651+09:00  INFO 4672 --- [YedamApplication] [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 2dcc9ea3d8f0
+2024-09-18T15:24:22.990+09:00  INFO 4672 --- [YedamApplication] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-09-18T15:24:23.542+09:00  INFO 4672 --- [YedamApplication] [Thread-230] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2024-09-18T15:24:23.554+09:00  INFO 4672 --- [YedamApplication] [Thread-230] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+2024-09-18T15:24:26.927+09:00  INFO 4672 --- [YedamApplication] [restartedMain] com.yedam.app.Boot01Application          : Starting Boot01Application using Java 17.0.9 with PID 4672 (C:\Users\Administrator\git\spring-study\boot01\target\classes started by Administrator in C:\Users\Administrator\git\spring-study\boot01)
+2024-09-18T15:24:26.927+09:00  INFO 4672 --- [YedamApplication] [restartedMain] com.yedam.app.Boot01Application          : No active profile set, falling back to 1 default profile: "default"
+2024-09-18T15:24:27.338+09:00  INFO 4672 --- [YedamApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-09-18T15:24:27.344+09:00  INFO 4672 --- [YedamApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JDBC repository interfaces.
+2024-09-18T15:24:27.503+09:00  WARN 4672 --- [YedamApplication] [restartedMain] o.apache.tomcat.util.modeler.Registry    : The MBean registry cannot be disabled because it has already been initialised
+2024-09-18T15:24:27.514+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 80 (http)
+2024-09-18T15:24:27.515+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-18T15:24:27.515+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-18T15:24:27.546+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-09-18T15:24:27.546+09:00  INFO 4672 --- [YedamApplication] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 617 ms
+2024-09-18T15:24:27.879+09:00  INFO 4672 --- [YedamApplication] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customerUserDetailsService
+2024-09-18T15:24:28.223+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 16 endpoints beneath base path '/actuator'
+2024-09-18T15:24:28.644+09:00  INFO 4672 --- [YedamApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
+2024-09-18T15:24:28.666+09:00  INFO 4672 --- [YedamApplication] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-9 - Added connection oracle.jdbc.driver.T4CConnection@16df9994
+2024-09-18T15:24:28.666+09:00  INFO 4672 --- [YedamApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
+2024-09-18T15:24:28.745+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-18T15:24:28.789+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 80 (http) with context path '/'
+2024-09-18T15:24:28.804+09:00  INFO 4672 --- [YedamApplication] [restartedMain] com.yedam.app.Boot01Application          : Started Boot01Application in 1.901 seconds (process running for 1440.528)
+2024-09-18T15:24:28.809+09:00  INFO 4672 --- [YedamApplication] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-09-18T15:24:28.812+09:00  INFO 4672 --- [YedamApplication] [http-nio-80-exec-1] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-18T15:24:28.812+09:00  INFO 4672 --- [YedamApplication] [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-18T15:24:28.814+09:00  INFO 4672 --- [YedamApplication] [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-09-18T15:24:28.824+09:00  INFO 4672 --- [YedamApplication] [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 2dcc9ea3d8f0
+2024-09-18T15:26:09.101+09:00  INFO 4672 --- [YedamApplication] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 35 class path changes (0 additions, 0 deletions, 35 modifications)
+2024-09-18T15:26:09.297+09:00  INFO 4672 --- [YedamApplication] [Thread-258] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
+2024-09-18T15:26:09.303+09:00  INFO 4672 --- [YedamApplication] [Thread-258] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed.
+2024-09-18T15:26:09.555+09:00  INFO 4672 --- [YedamApplication] [restartedMain] com.yedam.app.Boot01Application          : Starting Boot01Application using Java 17.0.9 with PID 4672 (C:\Users\Administrator\git\spring-study\boot01\target\classes started by Administrator in C:\Users\Administrator\git\spring-study\boot01)
+2024-09-18T15:26:09.555+09:00  INFO 4672 --- [YedamApplication] [restartedMain] com.yedam.app.Boot01Application          : No active profile set, falling back to 1 default profile: "default"
+2024-09-18T15:26:10.002+09:00  INFO 4672 --- [YedamApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-09-18T15:26:10.009+09:00  INFO 4672 --- [YedamApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 JDBC repository interfaces.
+2024-09-18T15:26:10.186+09:00  WARN 4672 --- [YedamApplication] [restartedMain] o.apache.tomcat.util.modeler.Registry    : The MBean registry cannot be disabled because it has already been initialised
+2024-09-18T15:26:10.196+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 80 (http)
+2024-09-18T15:26:10.197+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-18T15:26:10.197+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-18T15:26:10.219+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-09-18T15:26:10.219+09:00  INFO 4672 --- [YedamApplication] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 660 ms
+2024-09-18T15:26:10.552+09:00  INFO 4672 --- [YedamApplication] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customerUserDetailsService
+2024-09-18T15:26:10.827+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 16 endpoints beneath base path '/actuator'
+2024-09-18T15:26:11.224+09:00  INFO 4672 --- [YedamApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Starting...
+2024-09-18T15:26:11.267+09:00  INFO 4672 --- [YedamApplication] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-10 - Added connection oracle.jdbc.driver.T4CConnection@5092089f
+2024-09-18T15:26:11.267+09:00  INFO 4672 --- [YedamApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Start completed.
+2024-09-18T15:26:11.365+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-18T15:26:11.448+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 80 (http) with context path '/'
+2024-09-18T15:26:11.467+09:00  INFO 4672 --- [YedamApplication] [restartedMain] com.yedam.app.Boot01Application          : Started Boot01Application in 1.943 seconds (process running for 1543.19)
+2024-09-18T15:26:11.472+09:00  INFO 4672 --- [YedamApplication] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-09-18T15:26:11.476+09:00  INFO 4672 --- [YedamApplication] [http-nio-80-exec-1] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-18T15:26:11.476+09:00  INFO 4672 --- [YedamApplication] [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-18T15:26:11.479+09:00  INFO 4672 --- [YedamApplication] [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-09-18T15:26:11.488+09:00  INFO 4672 --- [YedamApplication] [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 2dcc9ea3d8f0
+2024-09-18T15:27:17.256+09:00  INFO 4672 --- [YedamApplication] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-09-18T15:27:17.533+09:00  INFO 4672 --- [YedamApplication] [Thread-289] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown initiated...
+2024-09-18T15:27:17.537+09:00  INFO 4672 --- [YedamApplication] [Thread-289] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown completed.
+2024-09-18T15:27:17.803+09:00  INFO 4672 --- [YedamApplication] [restartedMain] com.yedam.app.Boot01Application          : Starting Boot01Application using Java 17.0.9 with PID 4672 (C:\Users\Administrator\git\spring-study\boot01\target\classes started by Administrator in C:\Users\Administrator\git\spring-study\boot01)
+2024-09-18T15:27:17.803+09:00  INFO 4672 --- [YedamApplication] [restartedMain] com.yedam.app.Boot01Application          : No active profile set, falling back to 1 default profile: "default"
+2024-09-18T15:27:18.280+09:00  INFO 4672 --- [YedamApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-09-18T15:27:18.287+09:00  INFO 4672 --- [YedamApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JDBC repository interfaces.
+2024-09-18T15:27:18.446+09:00  WARN 4672 --- [YedamApplication] [restartedMain] o.apache.tomcat.util.modeler.Registry    : The MBean registry cannot be disabled because it has already been initialised
+2024-09-18T15:27:18.456+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 80 (http)
+2024-09-18T15:27:18.459+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-18T15:27:18.459+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-18T15:27:18.481+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-09-18T15:27:18.481+09:00  INFO 4672 --- [YedamApplication] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 675 ms
+2024-09-18T15:27:18.766+09:00  INFO 4672 --- [YedamApplication] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customerUserDetailsService
+2024-09-18T15:27:19.047+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 16 endpoints beneath base path '/actuator'
+2024-09-18T15:27:19.529+09:00  INFO 4672 --- [YedamApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Starting...
+2024-09-18T15:27:19.548+09:00  INFO 4672 --- [YedamApplication] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-11 - Added connection oracle.jdbc.driver.T4CConnection@38d0b0e0
+2024-09-18T15:27:19.548+09:00  INFO 4672 --- [YedamApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Start completed.
+2024-09-18T15:27:19.613+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-18T15:27:19.656+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 80 (http) with context path '/'
+2024-09-18T15:27:19.672+09:00  INFO 4672 --- [YedamApplication] [restartedMain] com.yedam.app.Boot01Application          : Started Boot01Application in 1.899 seconds (process running for 1611.396)
+2024-09-18T15:27:19.676+09:00  INFO 4672 --- [YedamApplication] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-09-18T15:27:19.681+09:00  INFO 4672 --- [YedamApplication] [http-nio-80-exec-1] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-18T15:27:19.681+09:00  INFO 4672 --- [YedamApplication] [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-18T15:27:19.683+09:00  INFO 4672 --- [YedamApplication] [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-09-18T15:27:19.693+09:00  INFO 4672 --- [YedamApplication] [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 2dcc9ea3d8f0
+2024-09-18T15:28:03.067+09:00  INFO 4672 --- [YedamApplication] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-09-18T15:28:03.268+09:00  INFO 4672 --- [YedamApplication] [Thread-314] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown initiated...
+2024-09-18T15:28:03.272+09:00  INFO 4672 --- [YedamApplication] [Thread-314] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown completed.
+2024-09-18T15:28:03.537+09:00  INFO 4672 --- [YedamApplication] [restartedMain] com.yedam.app.Boot01Application          : Starting Boot01Application using Java 17.0.9 with PID 4672 (C:\Users\Administrator\git\spring-study\boot01\target\classes started by Administrator in C:\Users\Administrator\git\spring-study\boot01)
+2024-09-18T15:28:03.537+09:00  INFO 4672 --- [YedamApplication] [restartedMain] com.yedam.app.Boot01Application          : No active profile set, falling back to 1 default profile: "default"
+2024-09-18T15:28:03.950+09:00  INFO 4672 --- [YedamApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-09-18T15:28:03.956+09:00  INFO 4672 --- [YedamApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 JDBC repository interfaces.
+2024-09-18T15:28:04.121+09:00  WARN 4672 --- [YedamApplication] [restartedMain] o.apache.tomcat.util.modeler.Registry    : The MBean registry cannot be disabled because it has already been initialised
+2024-09-18T15:28:04.131+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 80 (http)
+2024-09-18T15:28:04.133+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-18T15:28:04.133+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-18T15:28:04.156+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-09-18T15:28:04.156+09:00  INFO 4672 --- [YedamApplication] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 618 ms
+2024-09-18T15:28:04.524+09:00  INFO 4672 --- [YedamApplication] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customerUserDetailsService
+2024-09-18T15:28:04.825+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 0 endpoints beneath base path '/actuator'
+2024-09-18T15:28:05.206+09:00  INFO 4672 --- [YedamApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Starting...
+2024-09-18T15:28:05.225+09:00  INFO 4672 --- [YedamApplication] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-12 - Added connection oracle.jdbc.driver.T4CConnection@33caf2f5
+2024-09-18T15:28:05.225+09:00  INFO 4672 --- [YedamApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Start completed.
+2024-09-18T15:28:05.287+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-18T15:28:05.327+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 80 (http) with context path '/'
+2024-09-18T15:28:05.347+09:00  INFO 4672 --- [YedamApplication] [restartedMain] com.yedam.app.Boot01Application          : Started Boot01Application in 1.835 seconds (process running for 1657.071)
+2024-09-18T15:28:05.354+09:00  INFO 4672 --- [YedamApplication] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   CachesEndpointAutoConfiguration#cachesEndpointWebExtension:
+      Did not match:
+         - @ConditionalOnAvailableEndpoint no 'management.endpoints' property marked it as exposed (OnAvailableEndpointCondition)
+      Matched:
+         - @ConditionalOnBean (types: org.springframework.boot.actuate.cache.CachesEndpoint; SearchStrategy: all) found bean 'cachesEndpoint'; @ConditionalOnMissingBean (types: org.springframework.boot.actuate.cache.CachesEndpointWebExtension; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ConfigurationPropertiesReportEndpointAutoConfiguration#configurationPropertiesReportEndpointWebExtension:
+      Did not match:
+         - @ConditionalOnAvailableEndpoint no 'management.endpoints' property marked it as exposed (OnAvailableEndpointCondition)
+      Matched:
+         - @ConditionalOnBean (types: org.springframework.boot.actuate.context.properties.ConfigurationPropertiesReportEndpoint; SearchStrategy: all) found bean 'configurationPropertiesReportEndpoint'; @ConditionalOnMissingBean (types: org.springframework.boot.actuate.context.properties.ConfigurationPropertiesReportEndpointWebExtension; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   EnvironmentEndpointAutoConfiguration#environmentEndpointWebExtension:
+      Did not match:
+         - @ConditionalOnAvailableEndpoint no 'management.endpoints' property marked it as exposed (OnAvailableEndpointCondition)
+      Matched:
+         - @ConditionalOnBean (types: org.springframework.boot.actuate.env.EnvironmentEndpoint; SearchStrategy: all) found bean 'environmentEndpoint'; @ConditionalOnMissingBean (types: org.springframework.boot.actuate.env.EnvironmentEndpointWebExtension; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   HealthEndpointWebExtensionConfiguration:
+      Did not match:
+         - @ConditionalOnAvailableEndpoint no 'management.endpoints' property marked it as exposed (OnAvailableEndpointCondition)
+      Matched:
+         - found 'session' scope (OnWebApplicationCondition)
+
+   SbomEndpointAutoConfiguration#sbomEndpointWebExtension:
+      Did not match:
+         - @ConditionalOnAvailableEndpoint no 'management.endpoints' property marked it as exposed (OnAvailableEndpointCondition)
+      Matched:
+         - @ConditionalOnBean (types: org.springframework.boot.actuate.sbom.SbomEndpoint; SearchStrategy: all) found bean 'sbomEndpoint'; @ConditionalOnMissingBean (types: org.springframework.boot.actuate.sbom.SbomEndpointWebExtension; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2024-09-18T15:28:05.354+09:00 ERROR 4672 --- [YedamApplication] [registrationTask1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
+
+java.lang.IllegalStateException: Either health or status endpoint must be enabled!
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationFactory.getHealthEndpointPath(DefaultApplicationFactory.java:227) ~[spring-boot-admin-client-3.2.3.jar:3.2.3]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationFactory.getHealthUrl(DefaultApplicationFactory.java:167) ~[spring-boot-admin-client-3.2.3.jar:3.2.3]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationFactory.createApplication(DefaultApplicationFactory.java:80) ~[spring-boot-admin-client-3.2.3.jar:3.2.3]
+	at de.codecentric.boot.admin.client.registration.DefaultApplicationRegistrator.register(DefaultApplicationRegistrator.java:56) ~[spring-boot-admin-client-3.2.3.jar:3.2.3]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-6.1.12.jar:6.1.12]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2024-09-18T15:28:09.792+09:00  INFO 4672 --- [YedamApplication] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-09-18T15:28:09.984+09:00  INFO 4672 --- [YedamApplication] [Thread-338] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown initiated...
+2024-09-18T15:28:09.988+09:00  INFO 4672 --- [YedamApplication] [Thread-338] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown completed.
+2024-09-18T15:28:10.254+09:00  INFO 4672 --- [YedamApplication] [restartedMain] com.yedam.app.Boot01Application          : Starting Boot01Application using Java 17.0.9 with PID 4672 (C:\Users\Administrator\git\spring-study\boot01\target\classes started by Administrator in C:\Users\Administrator\git\spring-study\boot01)
+2024-09-18T15:28:10.254+09:00  INFO 4672 --- [YedamApplication] [restartedMain] com.yedam.app.Boot01Application          : No active profile set, falling back to 1 default profile: "default"
+2024-09-18T15:28:10.667+09:00  INFO 4672 --- [YedamApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-09-18T15:28:10.677+09:00  INFO 4672 --- [YedamApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 JDBC repository interfaces.
+2024-09-18T15:28:10.901+09:00  WARN 4672 --- [YedamApplication] [restartedMain] o.apache.tomcat.util.modeler.Registry    : The MBean registry cannot be disabled because it has already been initialised
+2024-09-18T15:28:10.911+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 80 (http)
+2024-09-18T15:28:10.912+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-18T15:28:10.912+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-18T15:28:10.934+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-09-18T15:28:10.934+09:00  INFO 4672 --- [YedamApplication] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 678 ms
+2024-09-18T15:28:11.350+09:00  INFO 4672 --- [YedamApplication] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customerUserDetailsService
+2024-09-18T15:28:11.624+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 16 endpoints beneath base path '/actuator'
+2024-09-18T15:28:12.037+09:00  INFO 4672 --- [YedamApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Starting...
+2024-09-18T15:28:12.056+09:00  INFO 4672 --- [YedamApplication] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-13 - Added connection oracle.jdbc.driver.T4CConnection@1672e344
+2024-09-18T15:28:12.056+09:00  INFO 4672 --- [YedamApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Start completed.
+2024-09-18T15:28:12.128+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-18T15:28:12.179+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 80 (http) with context path '/'
+2024-09-18T15:28:12.197+09:00  INFO 4672 --- [YedamApplication] [restartedMain] com.yedam.app.Boot01Application          : Started Boot01Application in 1.969 seconds (process running for 1663.921)
+2024-09-18T15:28:12.202+09:00  INFO 4672 --- [YedamApplication] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   CachesEndpointAutoConfiguration#cachesEndpointWebExtension matched:
+      - @ConditionalOnBean (types: org.springframework.boot.actuate.cache.CachesEndpoint; SearchStrategy: all) found bean 'cachesEndpoint'; @ConditionalOnMissingBean (types: org.springframework.boot.actuate.cache.CachesEndpointWebExtension; SearchStrategy: all) did not find any beans (OnBeanCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   ConfigurationPropertiesReportEndpointAutoConfiguration#configurationPropertiesReportEndpointWebExtension matched:
+      - @ConditionalOnBean (types: org.springframework.boot.actuate.context.properties.ConfigurationPropertiesReportEndpoint; SearchStrategy: all) found bean 'configurationPropertiesReportEndpoint'; @ConditionalOnMissingBean (types: org.springframework.boot.actuate.context.properties.ConfigurationPropertiesReportEndpointWebExtension; SearchStrategy: all) did not find any beans (OnBeanCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   EnvironmentEndpointAutoConfiguration#environmentEndpointWebExtension matched:
+      - @ConditionalOnBean (types: org.springframework.boot.actuate.env.EnvironmentEndpoint; SearchStrategy: all) found bean 'environmentEndpoint'; @ConditionalOnMissingBean (types: org.springframework.boot.actuate.env.EnvironmentEndpointWebExtension; SearchStrategy: all) did not find any beans (OnBeanCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   HealthEndpointWebExtensionConfiguration matched:
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+      - @ConditionalOnBean (types: org.springframework.boot.actuate.health.HealthEndpoint; SearchStrategy: all) found bean 'healthEndpoint' (OnBeanCondition)
+
+   HealthEndpointWebExtensionConfiguration#healthEndpointWebExtension matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.health.HealthEndpointWebExtension; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   HealthEndpointWebExtensionConfiguration.MvcAdditionalHealthEndpointPathsConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+      - @ConditionalOnBean (types: org.springframework.web.servlet.DispatcherServlet; SearchStrategy: all) found bean 'dispatcherServlet' (OnBeanCondition)
+
+   SbomEndpointAutoConfiguration#sbomEndpointWebExtension matched:
+      - @ConditionalOnBean (types: org.springframework.boot.actuate.sbom.SbomEndpoint; SearchStrategy: all) found bean 'sbomEndpoint'; @ConditionalOnMissingBean (types: org.springframework.boot.actuate.sbom.SbomEndpointWebExtension; SearchStrategy: all) did not find any beans (OnBeanCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+
+Negative matches:
+-----------------
+
+   HealthEndpointWebExtensionConfiguration.JerseyAdditionalHealthEndpointPathsConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.glassfish.jersey.server.ResourceConfig' (OnClassCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2024-09-18T15:28:12.207+09:00  INFO 4672 --- [YedamApplication] [http-nio-80-exec-1] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-18T15:28:12.207+09:00  INFO 4672 --- [YedamApplication] [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-18T15:28:12.210+09:00  INFO 4672 --- [YedamApplication] [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-09-18T15:28:12.220+09:00  INFO 4672 --- [YedamApplication] [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 2dcc9ea3d8f0
+2024-09-18T15:28:15.603+09:00  INFO 4672 --- [YedamApplication] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-09-18T15:28:15.803+09:00  INFO 4672 --- [YedamApplication] [Thread-360] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown initiated...
+2024-09-18T15:28:15.808+09:00  INFO 4672 --- [YedamApplication] [Thread-360] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown completed.
+2024-09-18T15:28:16.105+09:00  INFO 4672 --- [YedamApplication] [restartedMain] com.yedam.app.Boot01Application          : Starting Boot01Application using Java 17.0.9 with PID 4672 (C:\Users\Administrator\git\spring-study\boot01\target\classes started by Administrator in C:\Users\Administrator\git\spring-study\boot01)
+2024-09-18T15:28:16.105+09:00  INFO 4672 --- [YedamApplication] [restartedMain] com.yedam.app.Boot01Application          : No active profile set, falling back to 1 default profile: "default"
+2024-09-18T15:28:16.679+09:00  INFO 4672 --- [YedamApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-09-18T15:28:16.688+09:00  INFO 4672 --- [YedamApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 JDBC repository interfaces.
+2024-09-18T15:28:16.859+09:00  WARN 4672 --- [YedamApplication] [restartedMain] o.apache.tomcat.util.modeler.Registry    : The MBean registry cannot be disabled because it has already been initialised
+2024-09-18T15:28:16.871+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 80 (http)
+2024-09-18T15:28:16.871+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-18T15:28:16.871+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-18T15:28:16.901+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-09-18T15:28:16.901+09:00  INFO 4672 --- [YedamApplication] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 793 ms
+2024-09-18T15:28:17.209+09:00  INFO 4672 --- [YedamApplication] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customerUserDetailsService
+2024-09-18T15:28:17.529+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 16 endpoints beneath base path '/actuator'
+2024-09-18T15:28:17.927+09:00  INFO 4672 --- [YedamApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Starting...
+2024-09-18T15:28:17.947+09:00  INFO 4672 --- [YedamApplication] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-14 - Added connection oracle.jdbc.driver.T4CConnection@507cd177
+2024-09-18T15:28:17.947+09:00  INFO 4672 --- [YedamApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Start completed.
+2024-09-18T15:28:18.016+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-18T15:28:18.066+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 80 (http) with context path '/'
+2024-09-18T15:28:18.080+09:00  INFO 4672 --- [YedamApplication] [restartedMain] com.yedam.app.Boot01Application          : Started Boot01Application in 2.013 seconds (process running for 1669.804)
+2024-09-18T15:28:18.083+09:00  INFO 4672 --- [YedamApplication] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-09-18T15:28:18.086+09:00  INFO 4672 --- [YedamApplication] [http-nio-80-exec-1] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-18T15:28:18.086+09:00  INFO 4672 --- [YedamApplication] [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-18T15:28:18.088+09:00  INFO 4672 --- [YedamApplication] [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-09-18T15:28:18.098+09:00  INFO 4672 --- [YedamApplication] [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 2dcc9ea3d8f0
+2024-09-18T15:28:26.907+09:00  INFO 4672 --- [YedamApplication] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 57 class path changes (0 additions, 26 deletions, 31 modifications)
+2024-09-18T15:28:27.142+09:00  INFO 4672 --- [YedamApplication] [Thread-382] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown initiated...
+2024-09-18T15:28:27.147+09:00  INFO 4672 --- [YedamApplication] [Thread-382] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown completed.
+2024-09-18T15:28:53.190+09:00  INFO 4672 --- [YedamApplication] [restartedMain] com.yedam.app.Boot01Application          : Starting Boot01Application using Java 17.0.9 with PID 4672 (C:\Users\Administrator\git\spring-study\boot01\target\classes started by Administrator in C:\Users\Administrator\git\spring-study\boot01)
+2024-09-18T15:28:53.191+09:00  INFO 4672 --- [YedamApplication] [restartedMain] com.yedam.app.Boot01Application          : No active profile set, falling back to 1 default profile: "default"
+2024-09-18T15:28:54.160+09:00  INFO 4672 --- [YedamApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-09-18T15:28:54.173+09:00  INFO 4672 --- [YedamApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 JDBC repository interfaces.
+2024-09-18T15:28:54.392+09:00  WARN 4672 --- [YedamApplication] [restartedMain] o.apache.tomcat.util.modeler.Registry    : The MBean registry cannot be disabled because it has already been initialised
+2024-09-18T15:28:54.402+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 80 (http)
+2024-09-18T15:28:54.402+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-18T15:28:54.402+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-18T15:28:54.429+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-09-18T15:28:54.430+09:00  INFO 4672 --- [YedamApplication] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1235 ms
+2024-09-18T15:28:54.875+09:00  INFO 4672 --- [YedamApplication] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customerUserDetailsService
+2024-09-18T15:28:55.192+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 16 endpoints beneath base path '/actuator'
+2024-09-18T15:28:55.381+09:00  WARN 4672 --- [YedamApplication] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-09-18T15:28:55.658+09:00  INFO 4672 --- [YedamApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Starting...
+2024-09-18T15:28:55.676+09:00  INFO 4672 --- [YedamApplication] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-15 - Added connection oracle.jdbc.driver.T4CConnection@10fd6fa6
+2024-09-18T15:28:55.676+09:00  INFO 4672 --- [YedamApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Start completed.
+2024-09-18T15:28:55.743+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-18T15:28:55.785+09:00  INFO 4672 --- [YedamApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 80 (http) with context path '/'
+2024-09-18T15:28:55.808+09:00  INFO 4672 --- [YedamApplication] [restartedMain] com.yedam.app.Boot01Application          : Started Boot01Application in 2.662 seconds (process running for 1707.533)
+2024-09-18T15:28:55.813+09:00  INFO 4672 --- [YedamApplication] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-09-18T15:28:55.817+09:00  INFO 4672 --- [YedamApplication] [http-nio-80-exec-1] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-18T15:28:55.817+09:00  INFO 4672 --- [YedamApplication] [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-18T15:28:55.819+09:00  INFO 4672 --- [YedamApplication] [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-09-18T15:28:55.828+09:00  INFO 4672 --- [YedamApplication] [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 2dcc9ea3d8f0
+2024-09-18T15:29:00.265+09:00  INFO 4672 --- [YedamApplication] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-09-18T15:29:00.728+09:00  INFO 4672 --- [YedamApplication] [Thread-404] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Shutdown initiated...
+2024-09-18T15:29:00.738+09:00  INFO 4672 --- [YedamApplication] [Thread-404] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Shutdown completed.
+2024-09-18T15:29:39.302+09:00  INFO 14176 --- [YedamApplication] [restartedMain] com.yedam.app.Boot01Application          : Starting Boot01Application using Java 17.0.9 with PID 14176 (C:\Users\Administrator\git\spring-study\boot01\target\classes started by Administrator in C:\Users\Administrator\git\spring-study\boot01)
+2024-09-18T15:29:39.306+09:00  INFO 14176 --- [YedamApplication] [restartedMain] com.yedam.app.Boot01Application          : No active profile set, falling back to 1 default profile: "default"
+2024-09-18T15:29:39.713+09:00  INFO 14176 --- [YedamApplication] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Administrator\.m2\repository\com\oracle\database\jdbc\ojdbc11\21.9.0.0\ojdbc11-21.9.0.0.jar referenced one or more files that do not exist: file:/C:/Users/Administrator/.m2/repository/com/oracle/database/jdbc/ojdbc11/21.9.0.0/oraclepki.jar
+2024-09-18T15:29:39.714+09:00  INFO 14176 --- [YedamApplication] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-18T15:29:39.714+09:00  INFO 14176 --- [YedamApplication] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-18T15:29:41.203+09:00  INFO 14176 --- [YedamApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-09-18T15:29:41.235+09:00  INFO 14176 --- [YedamApplication] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 0 JDBC repository interfaces.
+2024-09-18T15:29:42.372+09:00  INFO 14176 --- [YedamApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 80 (http)
+2024-09-18T15:29:42.391+09:00  INFO 14176 --- [YedamApplication] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-18T15:29:42.392+09:00  INFO 14176 --- [YedamApplication] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-18T15:29:42.477+09:00  INFO 14176 --- [YedamApplication] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-18T15:29:42.477+09:00  INFO 14176 --- [YedamApplication] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2762 ms
+2024-09-18T15:29:44.181+09:00  INFO 14176 --- [YedamApplication] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 16 endpoint(s) beneath base path '/actuator'
+2024-09-18T15:29:44.290+09:00  INFO 14176 --- [YedamApplication] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1c73d76b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1827c5b4, org.springframework.security.web.context.SecurityContextHolderFilter@380b49f9, org.springframework.security.web.header.HeaderWriterFilter@7e79ceef, org.springframework.security.web.authentication.logout.LogoutFilter@31bc5d8b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6647fe31, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6b97d4c, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@12ec4b1f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@eb0cde6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@641f4990, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@67929930, org.springframework.security.web.access.ExceptionTranslationFilter@1ae06b02, org.springframework.security.web.access.intercept.AuthorizationFilter@1e94d321]
+2024-09-18T15:29:45.494+09:00  INFO 14176 --- [YedamApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-18T15:29:45.753+09:00  INFO 14176 --- [YedamApplication] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@34b25893
+2024-09-18T15:29:45.755+09:00  INFO 14176 --- [YedamApplication] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-18T15:29:46.018+09:00  INFO 14176 --- [YedamApplication] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-18T15:29:46.433+09:00  INFO 14176 --- [YedamApplication] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 80 (http) with context path ''
+2024-09-18T15:29:46.457+09:00  INFO 14176 --- [YedamApplication] [restartedMain] com.yedam.app.Boot01Application          : Started Boot01Application in 7.683 seconds (process running for 8.797)
+2024-09-18T15:29:46.696+09:00  INFO 14176 --- [YedamApplication] [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-18T15:29:46.697+09:00  INFO 14176 --- [YedamApplication] [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-18T15:29:46.702+09:00  INFO 14176 --- [YedamApplication] [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2024-09-18T15:29:47.149+09:00  INFO 14176 --- [YedamApplication] [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 2dcc9ea3d8f0
