@@ -1,0 +1,33 @@
+<!DOCTYPE html><!-- default_config.html -->
+<html xmlns:th="http://www.thymeleaf.org">
+
+<!-- fragments -->
+<th:block  th:fragment="defaultConfig">
+	<!-- contextPath -->
+	<meta name="ctxPath" th:value="${contextPath}">
+</th:block>
+
+<!-- css -->
+<th:block  th:fragment="css">
+	<link rel="stylesheet" type="text/css" href="assets/vendors/styles/core.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendors/styles/icon-font.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/src/plugins/datatables/css/dataTables.bootstrap4.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/src/plugins/datatables/css/responsive.bootstrap4.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendors/styles/style.css">
+</th:block>
+
+<!-- js -->
+<th:block  th:fragment="js">
+	<script src="assets/vendors/scripts/core.js"></script>
+	<script src="assets/vendors/scripts/script.min.js"></script>
+	<script src="assets/vendors/scripts/process.js"></script>
+	<script src="assets/vendors/scripts/layout-settings.js"></script>
+	<script src="assets/src/plugins/apexcharts/apexcharts.min.js"></script>
+	<script src="assets/src/plugins/datatables/js/jquery.dataTables.min.js"></script>
+	<script src="assets/src/plugins/datatables/js/dataTables.bootstrap4.min.js"></script>
+	<script src="assets/src/plugins/datatables/js/dataTables.responsive.min.js"></script>
+	<script src="assets/src/plugins/datatables/js/responsive.bootstrap4.min.js"></script>
+	<script src="assets/vendors/scripts/dashboard.js"></script>
+</th:block>
+
+</html>
